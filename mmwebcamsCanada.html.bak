@@ -23,19 +23,19 @@
 <img src="https://cams.skilouise.com/cam2.jpg"  width="1850" alt="" />
 <img src="https://cams.skilouise.com/cam7.jpg"  width="1850" alt="" />
 <img src="https://cams.skilouise.com/cam8.jpg"  width="1850" alt="" />
-<img src="https://skilouise.roundshot.com/ptarmigan/" width="1850" alt="" />
+<iframe src="https://skilouise.roundshot.com/ptarmigan/" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://fairmont.roundshot.com/lake-louise/" width="1850"></iframe>
 
 
 <br><P>Banff</P><br>
 
-<!--script type="text/javascript">
+<script type="text/javascript">
 document.write('<img src="https://ftp.banff.ca/images/Banff_Caribou.jpg?'+Math.random()+'" alt="Banff_Moose"  width="1850">');
 </script>
 
 <script type="text/javascript">
 document.write('<img src="https://ftp.banff.ca/images/Banff_Moose.jpg?'+Math.random()+'" alt="Banff_Moose"  width="1850">');
-</script-->
+</script>
 
 <script type="text/javascript">
 document.write('<img src="https://banfftours.com/proxy.php?url=http://50.99.59.111/record/current.jpg&rand='+Math.random()+'" alt="Banff_Tours"  width="97%">');
