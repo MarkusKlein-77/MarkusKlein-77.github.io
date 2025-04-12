@@ -13,19 +13,6 @@
 </head>
 
 <body>
-<img alt="cam 4 Wildpark" src="https://www.stadionneubau-karlsruhe.de/webcams/?cam=4"  width="1850" />
-<br>
-<!--img alt="cam 38 Zoo Exotenhaus" src="https://service.ka-news.de/tools/webcams/?cam=38" /-->
-<br>
-
-<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Ausbau&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
-<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Tunnelroehre_West&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
-<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Tunnelroehre_Ost&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
-<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=ARGE_TUNNEL_RASTATT&project=TVM_Ostroehre&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
-<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=ARGE_TUNNEL_RASTATT&project=TVM_06&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
-<!--iframe src="https://baudoku.1000eyes.de/cam/bahn04/00408CF4772D/responsive.html" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe-->
-
-
 
 <script type="text/javascript">
 document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Atelier-BA20-23/S21-Atelier-BA20-23.jpg?'+Math.random()+'" alt="S21"  width="1850">');
@@ -36,8 +23,21 @@ document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Suedko
 </script>
 
 <script type="text/javascript">
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Planetarium/S21-Planetarium.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+</script>
+
+<script type="text/javascript">
 document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Turm-01/s21-turm-01.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
+
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/501/live/live.jpg?mode=live&update=1741704175&guest=kuu1cs0975p5fayb05033kca6xrstbaz" width="97%"/></a><br>
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/502/live/live.jpg?mode=live&update=1741704362&guest=k0b2c40ud553r286g0jp2tmaq9ht9kug" width="97%" /></a><br>
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/503/live/live.jpg?mode=live&update=1741704505&guest=vfa3dc0e35cmrqawe0nez7qmah24ky92" width="97%" /></a><br>
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/504/live/live.jpg?mode=live&update=1741704676&guest=r9d4pv0tr50xkc9x90arng9yn1ah8tvf" width="97%" /></a><br>
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/500/live/live.jpg?mode=live&update=1741703443&guest=kaz0xh0d5552zn2a8gsgyaxd2t6vxqvb" width="97%" /></a><br>
+<a title="S21" /><img src="https://portal.ipvcloud.com/live/499/live/live.jpg?mode=live&update=1742301120&guest=ub49cr9gu42zk5phmgt6cwu3p6wpkbv2" width="97%" /></a><br>
+
+
 
 <script type="text/javascript">
 document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-ITS-01/S21-NBSH-BA15.jpg?'+Math.random()+'" alt="S21"  width="1850">');
@@ -52,11 +52,27 @@ document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Bonatz
 </script>
 
 <script type="text/javascript">
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Bonatzbau-Kran/S21-Bonatzbau-Kran.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+</script>
+
+<script type="text/javascript">
 document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Turm-02/s21-turm-02.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Gitterschale-Turm/S21-Gitterschale-Turm.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+</script>
+
+<!--script type="text/javascript">
 document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-BA-12-Trogwand-Nord/S21-BA-12-Trogwand-Nord.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+</script-->
+
+<script type="text/javascript">
+document.write('<img src="https://api.site-view.de/api/camera/29/images/latest/O73ZYbOYbtHppmWr6-GwT62Sukmo0KxW?dayonly=false&aa=.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+</script>
+
+<script type="text/javascript">
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Bonatzbau-Nord-Haupteingang/S21-Bonatzbau-Nord-Haupteingang.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
@@ -80,11 +96,11 @@ document.write('<img src="https://wbsu.de/S21-Bahndirektion-Nord/S21-Bundesbahnd
 </script>
 
 <script type="text/javascript">
-document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Ehmannstrasse-2/S21-Ehmannstrasse-2.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Neckarportal/S21-Neckarportal.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
-document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Neckarportal/S21-Neckarportal.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-Abstellbahnhof-2/S21-Abstellbahnhof-1.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
@@ -92,17 +108,24 @@ document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-STR-Tu
 </script>
 
 <script type="text/javascript">
-document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-STR-Station_Zugang_Messe/html/webcams/S21-STR-Station_Zugang_Messe/S21-STR-Station_Zugang_Messe.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+document.write('<img src="https://5005l24o14.bautvplus.de/cam1/image.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
-document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-STR-Schacht_Station_2/html/webcams/S21-STR-Schacht_Station_2/S21-STR-Schacht_Station_2.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+document.write('<img src="https://5005l24o14.bautvplus.de/cam2/image.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <script type="text/javascript">
-document.write('<img src="https://webcam-bahnprojekt-stuttgart-ulm.de/S21-STR-Schacht_Station_1/html/webcams/S21-STR-Schacht_Station_1/S21-STR-Schacht_Station_1.jpg?'+Math.random()+'" alt="S21"  width="1850">');
+document.write('<img src="https://5005l24o14.bautvplus.de/cam3/image.jpg?'+Math.random()+'" alt="S21"  width="1850">');
 </script>
 
 <img alt="Flughafenkurve" src="https://webcam-bahnprojekt-stuttgart-ulm.de/cimage/webroot/img.php?src=/S21-STR-Trog_Ost_Flughafenkurve/S21-STR-Trog_Ost_Flughafenkurve.jpg" width="1850" />
+
+<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Ausbau&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Tunnelroehre_West&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=EIFFAGE_Infra_Nordwest&project=TURA_Tunnelroehre_Ost&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=ARGE_TUNNEL_RASTATT&project=TVM_Ostroehre&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+<iframe src="https://www.take-it-media.com/webcams/index.php?act=webcam&client=ARGE_TUNNEL_RASTATT&project=TVM_06&restricted=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+
 
 </body>
