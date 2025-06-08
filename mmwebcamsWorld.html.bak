@@ -90,20 +90,24 @@ document.write('<img src="http://webcam.land-in-sicht.com/feldberg/webcam-altgla
 <script type="text/javascript">
 document.write('<img src="https://www.hotelsoleriva.it/webcam/snap_c1.jpg?t='+Date.now()+'" width="97%">');
 </script>
-<iframe src="https://piantelle.panomax.com/" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="1850" height="900"></iframe>
+<iframe src="https://piantelle.panomax.com/" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="900"></iframe>
 
 <br>
 <br>
 <P>Lago di Iseo</P>
 <br>
 <a href="https://www.skylinewebcams.com/de/webcam/italia/lombardia/brescia/sulzano.html" target="_blank"><img src="https://embed.skylinewebcams.com/img/456.jpg" alt="【LIVE】 Sulzano | SkylineWebcams"></a>
+<a href="https://www.skylinewebcams.com/de/webcam/italia/lombardia/brescia/lago-diseo.html" target="_blank"><img src="https://embed.skylinewebcams.com/img/625.jpg" alt="【LIVE】 Sulzano | SkylineWebcams"></a>
+<a href="https://www.skylinewebcams.com/de/webcam/italia/lombardia/brescia/iseo.html" target="_blank"><img src="https://embed.skylinewebcams.com/img/344.jpg" alt="【LIVE】 Sulzano | SkylineWebcams"></a>
 <a title="Iseo" /><img src="https://meteo-brescia.it/mp/iseo/FI9901EP_00626E93F5EA/snap/webcam.php" width="97%" /></a><br>
-<a href="https://vedetta.org/de/Webcam/Italien/Lombardei/Brescia/See-Iseo/" title="Iseo" /><img src="https://vedetta.org/image-client/lago-iseo/image.jpg?rand=23mbf" width="97%" /></a><br>
+<a href="https://vedetta.org/de/Webcam/Italien/Lombardei/Brescia/See-Iseo/" title="Iseo" target="_blank" /><img src="https://vedetta.org/image-client/lago-iseo/image.jpg?rand=23mbf" width="97%" /></a><br>
 
+<br>
+<br>
+<P>Lago di Caldonazzo</P>
+<!--iframe src="http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="900"></iframe-->
+<img alt="Caldonazzo" src="http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg" width="97%" />
 
-https://vedetta.org/de/Webcam/Italien/Lombardei/Brescia/See-Iseo/
-
-<video id="example_video_1_html5_api" class="vjs-tech" preload="true" playsinline="true" webkit-playsinline="" poster="https://vedetta.org/image-client/lago-iseo/image.jpg?rand=23mbf" tabindex="-1" role="application" src="blob:https://vedetta.org/68852c1c-3979-4747-8732-a266c04cf4c4" width="97%"></video>
-
+	
 
 </body>
