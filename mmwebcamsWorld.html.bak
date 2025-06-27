@@ -42,6 +42,18 @@
 <!--iframe src="https://webtv.feratel.com/webtv/?design=v4&cam=6195&c1=0&c4=0&c34=0" muted="1" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="1080"></iframe><br><br-->
 <iframe src="https://valsenales.panomax.com/grawand#" muted="1" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="1080"></iframe><br><br>
 <iframe src="https://webtv.feratel.com/webtv/?design=v4&cam=6194&c1=0&c4=0&c34=0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="1080"></iframe><br><br>
+<br><br>
+<P>Ultental</P>
+<iframe src="https://webtv.feratel.com/webtv/?design=v5&cam=6235&c1=0&c4=0&c34=0" muted="1" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="1080"></iframe><br><br>
+<script type="text/javascript">
+document.write('<img src="https://www.ras.bz.it/fileadmin/Webcams/sorted/alm/cam1/latest.webp?'+Date.now()+'" width="97%"><br>');
+</script>
+<script type="text/javascript">
+document.write('<img src="https://www.ras.bz.it/fileadmin/Webcams/sorted/alm/cam2/latest.webp?'+Date.now()+'" width="97%"><br>');
+</script>
+<script type="text/javascript">
+document.write('<img src="https://www.ras.bz.it/fileadmin/Webcams/sorted/alm/cam3/latest.webp?'+Date.now()+'" width="97%"><br>');
+</script>
 
 
 <br><br>
@@ -105,8 +117,7 @@ document.write('<img src="https://www.hotelsoleriva.it/webcam/snap_c1.jpg?t='+Da
 <br>
 <br>
 <P>Lago di Caldonazzo</P>
-<!--iframe src="http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="900"></iframe-->
-<img alt="Caldonazzo" src="http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg" width="97%" />
+<iframe src="http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="900"></iframe>
 
 	
 
