@@ -23,7 +23,9 @@
 <img src="https://cams.skilouise.com/cam2.jpg"  width="1850" alt="" />
 <img src="https://cams.skilouise.com/cam7.jpg"  width="1850" alt="" />
 <img src="https://cams.skilouise.com/cam8.jpg"  width="1850" alt="" />
-<iframe src="https://skilouise.roundshot.com/ptarmigan/" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe
+
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://skilouise.roundshot.com/ptarmigan/" width="1850"></iframe>
+
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://fairmont.roundshot.com/lake-louise/" width="1850"></iframe>
 
 
