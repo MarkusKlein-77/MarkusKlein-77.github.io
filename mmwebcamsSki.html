@@ -1,61 +1,252 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta Http-Equiv="Cache-Control" Content="no-cache">
-<meta Http-Equiv="Pragma" Content="no-cache">
-<meta Http-Equiv="Expires" Content="0">
-<meta Http-Equiv="Pragma-directive: no-cache">
-<meta Http-Equiv="Cache-directive: no-cache">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Ski Webcams</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+	:root {
+		--bg: #edf4f7;
+		--panel: #ffffff;
+		--ink: #0e2a3b;
+		--muted: #4f6a7a;
+		--line: #d7e4ec;
+		--accent: #0077b6;
+		--accent-soft: #dff2fb;
+		--shadow: 0 14px 30px rgba(14, 42, 59, 0.12);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Source Sans 3', sans-serif;
+		color: var(--ink);
+		background:
+			radial-gradient(circle at 15% -10%, #b9e8ff 0%, transparent 32%),
+			radial-gradient(circle at 85% 0%, #c9f0df 0%, transparent 28%),
+			linear-gradient(180deg, #f7fbfe 0%, var(--bg) 100%);
+	}
+
+	header {
+		padding: 28px 16px 22px;
+		text-align: center;
+	}
+
+	h1 {
+		margin: 0;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 52px;
+		line-height: 1;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	.subtitle {
+		margin: 8px auto 0;
+		max-width: 860px;
+		color: var(--muted);
+		font-size: 18px;
+	}
+
+	.quick-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+		padding: 0 16px 20px;
+	}
+
+	.quick-nav a {
+		text-decoration: none;
+		color: var(--ink);
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 999px;
+		padding: 8px 14px;
+		font-weight: 600;
+	}
+
+	.quick-nav a:hover {
+		background: var(--accent-soft);
+		border-color: #b8d9ea;
+	}
+
+	main {
+		max-width: none;
+		width: calc(100vw - 24px);
+		margin: 0 auto;
+		padding: 0 8px 40px;
+	}
+
+	.group {
+		margin-top: 26px;
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 16px;
+		box-shadow: var(--shadow);
+		overflow: hidden;
+	}
+
+	.group-head {
+		padding: 14px 18px;
+		background: linear-gradient(90deg, #0f3550, #1a5069);
+		color: #fff;
+	}
+
+	.group-head h2 {
+		margin: 0;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 32px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+
+	.group-head p {
+		margin: 4px 0 0;
+		opacity: 0.9;
+		font-size: 14px;
+	}
+
+	.cards {
+		display: block;
+		padding: 14px;
+	}
+
+	.card {
+		border: 1px solid var(--line);
+		border-radius: 12px;
+		overflow: hidden;
+		background: #fbfdff;
+		margin-bottom: 14px;
+	}
+
+	.card-title {
+		margin: 0;
+		padding: 10px 12px;
+		font-size: 18px;
+		background: #f2f8fb;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.card iframe {
+		width: 100%;
+		height: 78vh;
+		min-height: 560px;
+		max-height: 920px;
+		border: 0;
+		display: block;
+		background: #e5edf2;
+	}
+
+	@media (max-width: 680px) {
+		h1 {
+			font-size: 42px;
+		}
+
+		.subtitle {
+			font-size: 16px;
+		}
+
+		.cards {
+			padding: 10px;
+		}
+
+		.card iframe {
+			height: 62vh;
+			min-height: 420px;
+		}
+	}
+</style>
 </head>
 <body>
+<header>
+	<h1>Ski Livecams</h1>
+	<p class="subtitle">Named webcams grouped by resort. One stale endpoint was replaced: Prosneige was removed after repeated stale captures and replaced with Cime Caron.</p>
+</header>
 
-<iframe src="https://www.skaping.com/valthorens/station" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/valthorens/lamaison" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/valthorens/3vallees" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/valthorens/2lacs" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<!--iframe src="https://www.skaping.com/valthorens/stade" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br-->
-<!--iframe src="https://www.skaping.com/valthorens/boismint" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br-->
-<iframe src="https://www.skaping.com/valthorens/funitelthorens" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/valthorens/prosneige" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://app.webcam-hd.com/orelle/sommet-orelle" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://app.webcam-hd.com/orelle/tyrolienne" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
+<nav class="quick-nav">
+	<a href="#val-thorens">Val Thorens</a>
+	<a href="#les-menuires">Les Menuires</a>
+	<a href="#meribel">Meribel</a>
+	<a href="#courchevel">Courchevel</a>
+</nav>
 
-<br><br><br><br>
+<main>
+	<section class="group" id="val-thorens">
+		<div class="group-head">
+			<h2>Val Thorens</h2>
+			<p>Source: https://www.valthorens.com/en/webcams/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Centre Station</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/station" title="Val Thorens Centre Station"></iframe></article>
+			<article class="card"><h3 class="card-title">La Maison Restaurant</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/lamaison" title="Val Thorens La Maison"></iframe></article>
+			<article class="card"><h3 class="card-title">3 Vallees</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/3vallees" title="Val Thorens 3 Vallees"></iframe></article>
+			<article class="card"><h3 class="card-title">La Bee Zipline</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/2lacs" title="Val Thorens La Bee Zipline"></iframe></article>
+			<article class="card"><h3 class="card-title">Boismint</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/boismint" title="Val Thorens Boismint"></iframe></article>
+			<article class="card"><h3 class="card-title">Funitel Thorens</h3><iframe loading="lazy" src="https://www.skaping.com/valthorens/funitelthorens" title="Val Thorens Funitel Thorens"></iframe></article>
+			<article class="card"><h3 class="card-title">Cime Caron</h3><iframe loading="lazy" src="https://app.webcam-hd.com/valthorens/cime-caron" title="Val Thorens Cime Caron"></iframe></article>
+			<article class="card"><h3 class="card-title">Plan Bouchet - Orelle</h3><iframe loading="lazy" src="https://app.webcam-hd.com/orelle/sommet-orelle" title="Orelle Plan Bouchet"></iframe></article>
+			<article class="card"><h3 class="card-title">Pointe du Bouchet</h3><iframe loading="lazy" src="https://app.webcam-hd.com/orelle/tyrolienne" title="Orelle Tyrolienne"></iframe></article>
+		</div>
+	</section>
 
-<iframe src="https://www.skaping.com/lesmenuires/croisette" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/les-menuires/la-masse" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/les-menuires/clocher" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://lesmenuires.com/de/webcam-les-bruyeres" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/les-menuires/les-enverses" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://lesmenuires.com/de/webcam-roc-des-3-marches" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<!--iframe src="https://lesmenuires.roundshot.com/montdelachambre/" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br-->
-<iframe src="https://lesmenuires.com/de/webcam-lac-du-lou" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://www.skaping.com/saintmartindebelleville/village" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
+	<section class="group" id="les-menuires">
+		<div class="group-head">
+			<h2>Les Menuires</h2>
+			<p>Source: https://lesmenuires.com/de/webcams</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">La Croisette</h3><iframe loading="lazy" src="https://www.skaping.com/lesmenuires/croisette" title="Les Menuires La Croisette"></iframe></article>
+			<article class="card"><h3 class="card-title">La Masse</h3><iframe loading="lazy" src="https://www.skaping.com/les-menuires/la-masse" title="Les Menuires La Masse"></iframe></article>
+			<article class="card"><h3 class="card-title">Le Clocher</h3><iframe loading="lazy" src="https://www.skaping.com/les-menuires/clocher" title="Les Menuires Le Clocher"></iframe></article>
+			<article class="card"><h3 class="card-title">Les Bruyeres</h3><iframe loading="lazy" src="https://lesmenuires.com/de/webcam-les-bruyeres" title="Les Menuires Les Bruyeres"></iframe></article>
+			<article class="card"><h3 class="card-title">Les Enverses</h3><iframe loading="lazy" src="https://www.skaping.com/les-menuires/les-enverses" title="Les Menuires Les Enverses"></iframe></article>
+			<article class="card"><h3 class="card-title">Roc des 3 Marches</h3><iframe loading="lazy" src="https://lesmenuires.com/de/webcam-roc-des-3-marches" title="Les Menuires Roc des 3 Marches"></iframe></article>
+			<article class="card"><h3 class="card-title">Lac du Lou</h3><iframe loading="lazy" src="https://lesmenuires.com/de/webcam-lac-du-lou" title="Les Menuires Lac du Lou"></iframe></article>
+			<article class="card"><h3 class="card-title">Saint-Martin-de-Belleville</h3><iframe loading="lazy" src="https://www.skaping.com/saintmartindebelleville/village" title="Saint-Martin-de-Belleville"></iframe></article>
+		</div>
+	</section>
 
-<br><br><br><br>
+	<section class="group" id="meribel">
+		<div class="group-head">
+			<h2>Meribel</h2>
+			<p>Source: https://www.meribel.net/en/practical-information/webcams/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Roc de Fer</h3><iframe loading="lazy" src="https://www.skaping.com/meribel/roc-de-fer" title="Meribel Roc de Fer"></iframe></article>
+			<article class="card"><h3 class="card-title">Summit Tougnete</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/meribel_tougnete" title="Meribel Tougnete"></iframe></article>
+			<article class="card"><h3 class="card-title">Bouquetin</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/bouquetin" title="Meribel Bouquetin"></iframe></article>
+			<article class="card"><h3 class="card-title">Mont Vallon</h3><iframe loading="lazy" src="https://www.skaping.com/meribel/mont-vallon" title="Meribel Mont Vallon"></iframe></article>
+			<article class="card"><h3 class="card-title">Col de la Loze</h3><iframe loading="lazy" src="https://app.webcam-hd.com/courchevel-meribel/courchevel-meribel_col-de-la-loze" title="Meribel Col de la Loze"></iframe></article>
+			<article class="card"><h3 class="card-title">Versant Saulire</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/meribel_versant-saulire" title="Meribel Versant Saulire"></iframe></article>
+			<article class="card"><h3 class="card-title">Lac de Tueda</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/lac-de-tueda" title="Meribel Lac de Tueda"></iframe></article>
+			<article class="card"><h3 class="card-title">Meribel-Mottaret Front de Neige</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/meribel-mottaret_front-de-neige" title="Meribel-Mottaret Front de Neige"></iframe></article>
+			<article class="card"><h3 class="card-title">Chaudanne - Meribel Centre</h3><iframe loading="lazy" src="https://app.webcam-hd.com/meribel/meribel_chaudanne" title="Meribel Chaudanne"></iframe></article>
+		</div>
+	</section>
 
-<iframe src="https://www.skaping.com/meribel/roc-de-fer" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://app.webcam-hd.com/meribel/meribel_tougnete" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-<br><br>
-<iframe src="https://app.webcam-hd.com/meribel/bouquetin" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-
+	<section class="group" id="courchevel">
+		<div class="group-head">
+			<h2>Courchevel</h2>
+			<p>Source: https://courchevel.com/de/livecams/webcam/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">La Saulire</h3><iframe loading="lazy" src="https://www.skaping.com/courchevel/saulire" title="Courchevel La Saulire"></iframe></article>
+			<article class="card"><h3 class="card-title">Le Signal</h3><iframe loading="lazy" src="https://courchevel.roundshot.com/signal/#/" title="Courchevel Le Signal"></iframe></article>
+			<article class="card"><h3 class="card-title">Les Chenus</h3><iframe loading="lazy" src="https://www.skaping.com/courchevel/chenus" title="Courchevel Les Chenus"></iframe></article>
+			<article class="card"><h3 class="card-title">La Croisette</h3><iframe loading="lazy" src="https://www.skaping.com/courchevel/la-croisette" title="Courchevel La Croisette"></iframe></article>
+			<article class="card"><h3 class="card-title">Bouc Blanc</h3><iframe loading="lazy" src="https://www.skaping.com/courchevel/bouc-blanc" title="Courchevel Bouc Blanc"></iframe></article>
+		</div>
+	</section>
+</main>
 </body>
+</html>
+
