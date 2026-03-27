@@ -1,214 +1,357 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta Http-Equiv="Cache-Control" Content="no-cache">
-<meta Http-Equiv="Pragma" Content="no-cache">
-<meta Http-Equiv="Expires" Content="0">
-<meta Http-Equiv="Pragma-directive: no-cache">
-<meta Http-Equiv="Cache-directive: no-cache">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Canadian Ski Webcams</title>
 <style>
-	p {
-		font: normal 20px Verdana, Arial, sans-serif;
+	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+	:root {
+		--bg: #edf4f7;
+		--panel: #ffffff;
+		--ink: #0e2a3b;
+		--muted: #4f6a7a;
+		--line: #d7e4ec;
+		--accent-soft: #dff2fb;
+		--shadow: 0 14px 30px rgba(14, 42, 59, 0.12);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Source Sans 3', sans-serif;
+		color: var(--ink);
+		background:
+			radial-gradient(circle at 15% -10%, #b9e8ff 0%, transparent 32%),
+			radial-gradient(circle at 85% 0%, #c9f0df 0%, transparent 28%),
+			linear-gradient(180deg, #f7fbfe 0%, var(--bg) 100%);
+	}
+
+	header {
+		padding: 28px 16px 22px;
+		text-align: center;
+	}
+
+	h1 {
+		margin: 0;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 52px;
+		line-height: 1;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	.subtitle {
+		margin: 8px auto 0;
+		max-width: 980px;
+		color: var(--muted);
+		font-size: 18px;
+	}
+
+	.quick-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+		padding: 0 16px 20px;
+	}
+
+	.quick-nav a {
+		text-decoration: none;
+		color: var(--ink);
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 999px;
+		padding: 8px 14px;
+		font-weight: 600;
+	}
+
+	.quick-nav a:hover {
+		background: var(--accent-soft);
+		border-color: #b8d9ea;
+	}
+
+	main {
+		max-width: none;
+		width: calc(100vw - 24px);
+		margin: 0 auto;
+		padding: 0 8px 40px;
+	}
+
+	.group {
+		margin-top: 26px;
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 16px;
+		box-shadow: var(--shadow);
+		overflow: hidden;
+	}
+
+	.group-head {
+		padding: 14px 18px;
+		background: linear-gradient(90deg, #0f3550, #1a5069);
+		color: #fff;
+	}
+
+	.group-head h2 {
+		margin: 0;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 32px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+
+	.group-head p {
+		margin: 4px 0 0;
+		opacity: 0.9;
+		font-size: 14px;
+		word-break: break-word;
+	}
+
+	.cards {
+		display: block;
+		padding: 14px;
+	}
+
+	.card {
+		border: 1px solid var(--line);
+		border-radius: 12px;
+		overflow: hidden;
+		background: #fbfdff;
+		margin-bottom: 14px;
+	}
+
+	.card:last-child {
+		margin-bottom: 0;
+	}
+
+	.card-title {
+		margin: 0;
+		padding: 10px 12px;
+		font-size: 18px;
+		background: #f2f8fb;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.card iframe,
+	.card img {
+		width: 100%;
+		height: 78vh;
+		min-height: 560px;
+		max-height: 920px;
+		border: 0;
+		display: block;
+		background: #e5edf2;
+		object-fit: cover;
+	}
+
+	@media (max-width: 680px) {
+		h1 {
+			font-size: 42px;
+		}
+
+		.subtitle {
+			font-size: 16px;
+		}
+
+		.cards {
+			padding: 10px;
+		}
+
+		.card iframe,
+		.card img {
+			height: 62vh;
+			min-height: 420px;
+		}
 	}
 </style>
-
-
 </head>
 <body>
-<br><P>Lake Louise</P><br>
-<img src="https://skilouise.roundshot.com/cams/585" width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam3.jpg"  width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam5.jpg"  width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam6.jpg"  width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam2.jpg"  width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam7.jpg"  width="97%" alt="" />
-<img src="https://cams.skilouise.com/cam8.jpg"  width="97%" alt="" />
+<header>
+	<h1>Canada Ski Livecams</h1>
+	<p class="subtitle">Named webcams grouped by resort. Stale endpoints were removed during validation, including two broken Panorama API feeds.</p>
+</header>
 
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://skilouise.roundshot.com/ptarmigan/" width="97%"></iframe>
+<nav class="quick-nav">
+	<a href="#lake-louise">Lake Louise</a>
+	<a href="#banff">Banff</a>
+	<a href="#banff-norquay">Banff Norquay</a>
+	<a href="#sunshine-village">Sunshine Village</a>
+	<a href="#revelstoke">Revelstoke</a>
+	<a href="#silver-star">Silver Star</a>
+	<a href="#sun-peaks">Sun Peaks</a>
+	<a href="#kicking-horse">Kicking Horse</a>
+	<a href="#panorama">Panorama</a>
+	<a href="#whistler">Whistler</a>
+</nav>
 
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://fairmont.roundshot.com/lake-louise/" width="97%"></iframe>
+<main>
+	<section class="group" id="lake-louise">
+		<div class="group-head">
+			<h2>Lake Louise</h2>
+			<p>Source: https://www.skilouise.com/mountain-cam/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Roundshot Summit</h3><iframe loading="lazy" src="https://skilouise.roundshot.com/cams/585" title="Lake Louise Roundshot Summit"></iframe></article>
+			<article class="card"><h3 class="card-title">Ptarmigan</h3><iframe loading="lazy" src="https://skilouise.roundshot.com/ptarmigan/" title="Lake Louise Ptarmigan"></iframe></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 3</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam3.jpg" src="https://cams.skilouise.com/cam3.jpg" alt="Lake Louise Cam 3"></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 5</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam5.jpg" src="https://cams.skilouise.com/cam5.jpg" alt="Lake Louise Cam 5"></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 6</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam6.jpg" src="https://cams.skilouise.com/cam6.jpg" alt="Lake Louise Cam 6"></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 2</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam2.jpg" src="https://cams.skilouise.com/cam2.jpg" alt="Lake Louise Cam 2"></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 7</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam7.jpg" src="https://cams.skilouise.com/cam7.jpg" alt="Lake Louise Cam 7"></article>
+			<article class="card"><h3 class="card-title">Lake Louise Cam 8</h3><img loading="lazy" class="live-image" data-base-src="https://cams.skilouise.com/cam8.jpg" src="https://cams.skilouise.com/cam8.jpg" alt="Lake Louise Cam 8"></article>
+			<article class="card"><h3 class="card-title">Fairmont Lake Louise</h3><iframe loading="lazy" src="https://fairmont.roundshot.com/lake-louise/" title="Fairmont Lake Louise"></iframe></article>
+		</div>
+	</section>
 
+	<section class="group" id="banff">
+		<div class="group-head">
+			<h2>Banff</h2>
+			<p>Source: direct provider feeds used (Fairmont, Skaping)</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Fairmont Banff Springs</h3><iframe loading="lazy" src="https://fairmont.roundshot.com/banff-springs/" title="Fairmont Banff Springs"></iframe></article>
+			<article class="card"><h3 class="card-title">Banff Gondola</h3><iframe loading="lazy" src="https://www.skaping.com/banffgondola" title="Banff Gondola"></iframe></article>
+			<article class="card"><h3 class="card-title">Golden Skybridge</h3><iframe loading="lazy" src="https://www.skaping.com/golden-skybridge" title="Golden Skybridge"></iframe></article>
+		</div>
+	</section>
 
-<br><P>Banff</P><br>
+	<section class="group" id="banff-norquay">
+		<div class="group-head">
+			<h2>Banff Norquay</h2>
+			<p>Source: direct image feeds</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">BanffCam</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" alt="Banff Norquay BanffCam"></article>
+			<article class="card"><h3 class="card-title">Cascade Cam</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/CascadeCam/cascade.jpg" src="https://banffnorquay.com/webcam-images/winter/CascadeCam/cascade.jpg" alt="Banff Norquay Cascade Cam"></article>
+		</div>
+	</section>
 
-<script type="text/javascript">
-document.write('<img src="https://ftp.banff.ca/images/Banff_Caribou.jpg?'+Math.random()+'" alt="Banff_Moose"  width="97%">');
+	<section class="group" id="sunshine-village">
+		<div class="group-head">
+			<h2>Sunshine Village</h2>
+			<p>Source: https://www.skibanff.com/conditions/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Standish and Strawberry</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/136l" src="https://cameras.skibanff.com/dynamic/136l" alt="Standish and Strawberry"></article>
+			<article class="card"><h3 class="card-title">Goat's Eye Base</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/17l" src="https://cameras.skibanff.com/dynamic/17l" alt="Goats Eye Base"></article>
+			<article class="card"><h3 class="card-title">Rock Isle Lake Cam</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/10l" src="https://cameras.skibanff.com/dynamic/10l" alt="Rock Isle Lake Cam"></article>
+		</div>
+	</section>
+
+	<section class="group" id="revelstoke">
+		<div class="group-head">
+			<h2>Revelstoke</h2>
+			<p>Source: https://www.revelstokemountainresort.com/mountain/conditions/webcams/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Top of Stoke Chair</h3><img loading="lazy" class="live-image" data-base-src="https://www.revelstokemountainresort.com/uploads/stoke/stoke.jpg" src="https://www.revelstokemountainresort.com/uploads/stoke/stoke.jpg" alt="Top of Stoke Chair"></article>
+			<article class="card"><h3 class="card-title">Top of Stellar Chair</h3><img loading="lazy" class="live-image" data-base-src="https://www.revelstokemountainresort.com/uploads/stellar/stellar.jpg" src="https://www.revelstokemountainresort.com/uploads/stellar/stellar.jpg" alt="Top of Stellar Chair"></article>
+			<article class="card"><h3 class="card-title">Top of Upper Gondola</h3><img loading="lazy" class="live-image" data-base-src="https://www.revelstokemountainresort.com/uploads/webcams/outpost.jpg" src="https://www.revelstokemountainresort.com/uploads/webcams/outpost.jpg" alt="Top of Upper Gondola"></article>
+			<article class="card"><h3 class="card-title">Top of Ripper Chair</h3><img loading="lazy" class="live-image" data-base-src="https://www.revelstokemountainresort.com/uploads/ripper/ripper.jpg" src="https://www.revelstokemountainresort.com/uploads/ripper/ripper.jpg" alt="Top of Ripper Chair"></article>
+			<article class="card"><h3 class="card-title">Village</h3><img loading="lazy" class="live-image" data-base-src="https://www.revelstokemountainresort.com/uploads/webcams/village.jpg" src="https://www.revelstokemountainresort.com/uploads/webcams/village.jpg" alt="Revelstoke Village"></article>
+		</div>
+	</section>
+
+	<section class="group" id="silver-star">
+		<div class="group-head">
+			<h2>Silver Star</h2>
+			<p>Source: https://www.skisilverstar.com/the-mountain/webcams/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Pow Cam</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/meadow.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/meadow.jpg" alt="Silver Star Pow Cam"></article>
+			<article class="card"><h3 class="card-title">Attridge</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/gulch.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/gulch.jpg" alt="Silver Star Attridge"></article>
+			<article class="card"><h3 class="card-title">Top of Silver Woods</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/silverwoods.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/silverwoods.jpg" alt="Top of Silver Woods"></article>
+			<article class="card"><h3 class="card-title">Tube Town</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/tubetown.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/tubetown.jpg" alt="Tube Town"></article>
+			<article class="card"><h3 class="card-title">Brewers Pond</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/brewers.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/brewers.jpg" alt="Brewers Pond"></article>
+			<article class="card"><h3 class="card-title">Comet Runs</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet2.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet2.jpg" alt="Comet Runs"></article>
+			<article class="card"><h3 class="card-title">Top of Comet</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet1.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet1.jpg" alt="Top of Comet"></article>
+			<article class="card"><h3 class="card-title">Village Cam</h3><img loading="lazy" class="live-image" data-base-src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/webcam.jpg" src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/webcam.jpg" alt="Silver Star Village Cam"></article>
+		</div>
+	</section>
+
+	<section class="group" id="sun-peaks">
+		<div class="group-head">
+			<h2>Sun Peaks</h2>
+			<p>Source: https://www.sunpeaksresort.com/ski-ride/weather-conditions-cams/webcams</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Village Day Lodge Slopeside</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Day%20Lodge%20Slopeside.jpg" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Day%20Lodge%20Slopeside.jpg" alt="Village Day Lodge Slopeside"></article>
+			<article class="card"><h3 class="card-title">Sunburst Lift Base</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Sunburst%20Lift%20Base.jpg?timestamp=1" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Sunburst%20Lift%20Base.jpg?timestamp=1" alt="Sunburst Lift Base"></article>
+			<article class="card"><h3 class="card-title">Elevated View of Morrisey</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_morrisey.jpg" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_morrisey.jpg" alt="Elevated View of Morrisey"></article>
+			<article class="card"><h3 class="card-title">Elevated View of OSV</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_OSV.jpg" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_OSV.jpg" alt="Elevated View of OSV"></article>
+			<article class="card"><h3 class="card-title">View of Mt Todd</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/view%20of%20mt%20todd.jpg" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/view%20of%20mt%20todd.jpg" alt="View of Mt Todd"></article>
+			<article class="card"><h3 class="card-title">Village Clock Tower</h3><img loading="lazy" class="live-image" data-base-src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg" src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg" alt="Village Clock Tower"></article>
+		</div>
+	</section>
+
+	<section class="group" id="kicking-horse">
+		<div class="group-head">
+			<h2>Kicking Horse</h2>
+			<p>Source: https://kickinghorseresort.com/conditions/mountain-cam/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 1</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam1/final.jpg" src="https://secure.skircr.com/cams2/khcam1/final.jpg" alt="Kicking Horse Cam 1"></article>
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 2</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam2/final.jpg" src="https://secure.skircr.com/cams2/khcam2/final.jpg" alt="Kicking Horse Cam 2"></article>
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 3</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam3/final.jpg" src="https://secure.skircr.com/cams2/khcam3/final.jpg" alt="Kicking Horse Cam 3"></article>
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 4</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam4/final.jpg" src="https://secure.skircr.com/cams2/khcam4/final.jpg" alt="Kicking Horse Cam 4"></article>
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 5</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam5/final.jpg" src="https://secure.skircr.com/cams2/khcam5/final.jpg" alt="Kicking Horse Cam 5"></article>
+			<article class="card"><h3 class="card-title">Kicking Horse Cam 6</h3><img loading="lazy" class="live-image" data-base-src="https://secure.skircr.com/cams2/khcam6/final.jpg" src="https://secure.skircr.com/cams2/khcam6/final.jpg" alt="Kicking Horse Cam 6"></article>
+		</div>
+	</section>
+
+	<section class="group" id="panorama">
+		<div class="group-head">
+			<h2>Panorama</h2>
+			<p>Source: https://www.panoramaresort.com/panorama-today/mountain-webcams</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Panorama Cam 10</h3><img loading="lazy" class="live-image" data-base-src="https://www.panoramaresort.com/webcam-api/latest/10/1850/900" src="https://www.panoramaresort.com/webcam-api/latest/10/1850/900" alt="Panorama Cam 10"></article>
+			<article class="card"><h3 class="card-title">Panorama Cam 13</h3><img loading="lazy" class="live-image" data-base-src="https://www.panoramaresort.com/webcam-api/latest/13/1850/900" src="https://www.panoramaresort.com/webcam-api/latest/13/1850/900" alt="Panorama Cam 13"></article>
+			<article class="card"><h3 class="card-title">Panorama Cam 14</h3><img loading="lazy" class="live-image" data-base-src="https://www.panoramaresort.com/webcam-api/latest/14/1850/900" src="https://www.panoramaresort.com/webcam-api/latest/14/1850/900" alt="Panorama Cam 14"></article>
+		</div>
+	</section>
+
+	<section class="group" id="whistler">
+		<div class="group-head">
+			<h2>Whistler</h2>
+			<p>Source: https://www.whistler.com/webcams/</p>
+		</div>
+		<div class="cards">
+			<article class="card"><h3 class="card-title">Roundhouse Lodge - Whistler Mountain</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlerroundhouse.jpg" src="https://player.brownrice.com/snapshot/whistlerroundhouse.jpg" alt="Whistler Roundhouse"></article>
+			<article class="card"><h3 class="card-title">Whistler Peak</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlerpeak.jpg" src="https://player.brownrice.com/snapshot/whistlerpeak.jpg" alt="Whistler Peak"></article>
+			<article class="card"><h3 class="card-title">Whistler Blackcomb</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlerblackcomb.jpg" src="https://player.brownrice.com/snapshot/whistlerblackcomb.jpg" alt="Whistler Blackcomb"></article>
+			<article class="card"><h3 class="card-title">7th Heaven</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistler7thheaven.jpg" src="https://player.brownrice.com/snapshot/whistler7thheaven.jpg" alt="Whistler 7th Heaven"></article>
+			<article class="card"><h3 class="card-title">Glacier Express</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlerglacier.jpg" src="https://player.brownrice.com/snapshot/whistlerglacier.jpg" alt="Whistler Glacier"></article>
+			<article class="card"><h3 class="card-title">Creekside Base</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlercreekside.jpg" src="https://player.brownrice.com/snapshot/whistlercreekside.jpg" alt="Whistler Creekside"></article>
+			<article class="card"><h3 class="card-title">Village Fitz</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlervillagefitz.jpg" src="https://player.brownrice.com/snapshot/whistlervillagefitz.jpg" alt="Whistler Village Fitz"></article>
+			<article class="card"><h3 class="card-title">Whistler Village</h3><img loading="lazy" class="live-image" data-base-src="https://player.brownrice.com/snapshot/whistlervillage.jpg" src="https://player.brownrice.com/snapshot/whistlervillage.jpg" alt="Whistler Village"></article>
+		</div>
+	</section>
+</main>
+
+<script>
+	(function () {
+		function refreshLiveImages() {
+			var now = Date.now();
+			var images = document.querySelectorAll('.live-image[data-base-src]');
+			for (var i = 0; i < images.length; i++) {
+				var img = images[i];
+				var base = img.getAttribute('data-base-src');
+				img.src = base + (base.indexOf('?') === -1 ? '?' : '&') + 't=' + now;
+			}
+		}
+
+		refreshLiveImages();
+		setInterval(refreshLiveImages, 60000);
+	})();
 </script>
-
-<script type="text/javascript">
-document.write('<img src="https://ftp.banff.ca/images/Banff_Moose.jpg?'+Math.random()+'" alt="Banff_Moose"  width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://banfftours.com/proxy.php?url=http://50.99.59.111/record/current.jpg&rand='+Math.random()+'" alt="Banff_Tours"  width="97%">');
-</script>
-
-
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="media-youtube-player" frameborder="0" height="675" src="https://fairmont.roundshot.com/banff-springs/" width="97%"></iframe>
-
-<iframe src="https://www.skaping.com/banffgondola" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-
-<iframe src="https://www.skaping.com/golden-skybridge" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" width="97%" height="800"></iframe>
-
-
-<br><P>Banff Norquay</P><br>
-
-
-<script type="text/javascript">
-document.write('<img src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg?refresh='+Math.random()+'" alt="Banff Norquay Cascade"  width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://banffnorquay.com/webcam-images/winter/CascadeCam/cascade.jpg?refresh='+Math.random()+'" alt="Banff Norquay Cascade"  width="97%">');
-</script>
-
-
-<br><P>Sunshine Village</P><br>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/131l" width="1850" alt="" />
-</a>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/132l" width="1850" alt="" />
-</a>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/181l" width="1850" alt="" />
-</a>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/15l" width="1850" alt="" />
-</a-->
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/136l"  width="97%" alt="" />
-</a>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/17l"  width="97%" alt="" />
-</a>
-
-<a title="Livecam 360">
-<img src="https://cameras.skibanff.com/dynamic/10l"  width="97%" alt="" />
-</a>
-
-
-<br><P>Revelstoke</P><br>
-
-<img src="https://www.revelstokemountainresort.com/uploads/stoke/stoke.jpg"  width="97%" alt="" />
-<img src="https://www.revelstokemountainresort.com/uploads/stellar/stellar.jpg" width="97%" alt="" />
-<script type="text/javascript">
-document.write('<img src="https://www.revelstokemountainresort.com/uploads/webcams/outpost.jpg?'+Date.now()+'" width="97%">');
-</script>
-<script type="text/javascript">
-document.write('<img src="https://www.revelstokemountainresort.com/uploads/ripper/ripper.jpg?'+Date.now()+'" width="97%">');
-</script>
-<script type="text/javascript">
-document.write('<img src="https://www.revelstokemountainresort.com/uploads/webcams/village.jpg?'+Date.now()+'" width="97%">');
-</script>
-
-
-
-
-<br><P>Silver Star</P><br>
-
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/meadow.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/gulch.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/silverwoods.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/tubetown.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/brewers.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet2.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/comet1.jpg" width="97%" alt="" />
-<img src="https://s3-us-west-2.amazonaws.com/skisilverstar.webcams/webcams/webcam.jpg" width="97%" alt="" />
-
-<br><P>Sun Peaks</P><br>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Day%20Lodge%20Slopeside.jpg?timestamp='+Date.now()+'" width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Sunburst%20Lift%20Base.jpg?timestamp='+Date.now()+'"  width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_morrisey.jpg?timestamp='+Date.now()+'"  width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/ele_view_of_OSV.jpg?timestamp='+Date.now()+'"  width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/view%20of%20mt%20todd.jpg?timestamp='+Date.now()+'" width="97%">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg?timestamp='+Date.now()+'"  width="97%">');
-</script>
-
-
-
-<br><P>Kicking Horse</P><br>
-
-<!--img src="https://secure.skircr.com/camskh/eagleeyecam.jpg"  width="1850" alt="" />
-<img src="https://secure.skircr.com/camskh/stairway.jpg" width="1850" alt="" />
-<img src="https://secure.skircr.com/camskh/terminator.jpg"  width="1850" alt="" />
-<img src="https://secure.skircr.com/camskh/catamount.jpg"  width="1850" alt="" />
-<img src="https://secure.skircr.com/camskh/basecam.jpg" width="1850" alt="" /-->
-<img src="https://secure.skircr.com/cams2/khcam1/final.jpg" width="97%" alt="" />
-<img src="https://secure.skircr.com/cams2/khcam2/final.jpg" width="97%" alt="" />
-<img src="https://secure.skircr.com/cams2/khcam3/final.jpg" width="97%" alt="" />
-<img src="https://secure.skircr.com/cams2/khcam4/final.jpg" width="97%" alt="" />
-<img src="https://secure.skircr.com/cams2/khcam5/final.jpg" width="97%" alt="" />
-<img src="https://secure.skircr.com/cams2/khcam6/final.jpg" width="97%" alt="" />
-
-<br><P>Panorama</P><br>
-
-<img src="https://www.panoramaresort.com/webcam-api/latest/10/1850/900" width="97%" alt="" />
-<img src="https://www.panoramaresort.com/webcam-api/latest/11/1850/900" width="97%" alt="" />
-<img src="https://www.panoramaresort.com/webcam-api/latest/13/1850/900" width="97%" alt="" />
-<img src="https://www.panoramaresort.com/webcam-api/latest/14/1850/900" width="97%" alt="" />
-<img src="https://www.panoramaresort.com/webcam-api/latest/16/1850/900" width="97%" alt="" />
-
-<br><P>Whistler</P><br>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlerroundhouse.jpg?'+Math.random()+'" width="97%" alt="Whistler Roundhouse Lodge">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlerpeak.jpg?'+Math.random()+'" width="97%" alt="Whistler Peak">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlerblackcomb.jpg?'+Math.random()+'" width="97%" alt="Whistler Blackcomb">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistler7thheaven.jpg?'+Math.random()+'" width="97%" alt="Whistler 7th Heaven">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlerglacier.jpg?'+Math.random()+'" width="97%" alt="Whistler Glacier">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlercreekside.jpg?'+Math.random()+'" width="97%" alt="Whistler Creekside">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlervillagefitz.jpg?'+Math.random()+'" width="97%" alt="Whistler Village Fitz">');
-</script>
-
-<script type="text/javascript">
-document.write('<img src="https://player.brownrice.com/snapshot/whistlervillage.jpg?'+Math.random()+'" width="97%" alt="Whistler Village">');
-</script>
-
-		
-
-<a href="https://www.whistler.com/webcams/" ><h3>Whistler Webcams</h3></a>
-
-
 </body>
+</html>
