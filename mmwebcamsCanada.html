@@ -140,8 +140,7 @@
 		border-bottom: 1px solid var(--line);
 	}
 
-	.card iframe,
-	.card img {
+	.card iframe {
 		width: 100%;
 		height: 78vh;
 		min-height: 560px;
@@ -149,7 +148,17 @@
 		border: 0;
 		display: block;
 		background: #e5edf2;
-		object-fit: cover;
+	}
+
+	.card img {
+		width: 100%;
+		height: auto;
+		min-height: 0;
+		max-height: none;
+		border: 0;
+		display: block;
+		background: #e5edf2;
+		object-fit: contain;
 	}
 
 	@media (max-width: 680px) {
@@ -165,10 +174,14 @@
 			padding: 10px;
 		}
 
-		.card iframe,
-		.card img {
+		.card iframe {
 			height: 62vh;
 			min-height: 420px;
+		}
+
+		.card img {
+			height: auto;
+			min-height: 0;
 		}
 	}
 </style>
@@ -214,24 +227,33 @@
 	<section class="group" id="sunshine-village">
 		<div class="group-head">
 			<h2>Sunshine Village</h2>
-			<p>Source: https://www.skibanff.com/conditions/</p>
+			<p>Sources: https://www.skibanff.com/conditions/ and https://www.skibanff.com/wp-json/sunshine/v1/cameras</p>
 		</div>
 		<div class="cards">
-			<article class="card"><h3 class="card-title">Standish and Strawberry</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/136l" src="https://cameras.skibanff.com/dynamic/136l" alt="Standish and Strawberry"></article>
-			<article class="card"><h3 class="card-title">Goat's Eye Base</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/17l" src="https://cameras.skibanff.com/dynamic/17l" alt="Goats Eye Base"></article>
-			<article class="card"><h3 class="card-title">Rock Isle Lake Cam</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/10l" src="https://cameras.skibanff.com/dynamic/10l" alt="Rock Isle Lake Cam"></article>
-			<article class="card"><h3 class="card-title">Aurora Cam</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/181l" src="https://cameras.skibanff.com/dynamic/181l" alt="Aurora Cam"></article>
+			<article class="card"><h3 class="card-title">Standish Viewing Deck</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/181l" src="https://cameras.skibanff.com/dynamic/181l" alt="Standish Viewing Deck"></article>
+			<article class="card"><h3 class="card-title">Wawa Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/40l" src="https://cameras.skibanff.com/dynamic/40l" alt="Wawa Unload"></article>
+			<article class="card"><h3 class="card-title">Selfie Cam</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/183l" src="https://cameras.skibanff.com/dynamic/183l" alt="Selfie Cam"></article>
+			<article class="card"><h3 class="card-title">Divide Express Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/236l" src="https://cameras.skibanff.com/dynamic/236l" alt="Divide Express Unload"></article>
+			<article class="card"><h3 class="card-title">Standish Express Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/15l" src="https://cameras.skibanff.com/dynamic/15l" alt="Standish Express Unload"></article>
+			<article class="card"><h3 class="card-title">Super Angel LX Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/182l" src="https://cameras.skibanff.com/dynamic/182l" alt="Super Angel LX Unload"></article>
+			<article class="card"><h3 class="card-title">Aurora Cam</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/10l" src="https://cameras.skibanff.com/dynamic/10l" alt="Aurora Cam"></article>
+			<article class="card"><h3 class="card-title">Goats Eye Express Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/228l" src="https://cameras.skibanff.com/dynamic/228l" alt="Goats Eye Express Unload"></article>
+			<article class="card"><h3 class="card-title">Strawberry Express Unload</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/14l" src="https://cameras.skibanff.com/dynamic/14l" alt="Strawberry Express Unload"></article>
+			<article class="card"><h3 class="card-title">Storm Board and Vincent Van Goat Cleared Daily at 3PM</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/135l" src="https://cameras.skibanff.com/dynamic/135l" alt="Storm Board and Vincent Van Goat"></article>
+			<article class="card"><h3 class="card-title">Mid Mountain Height of Snow</h3><img loading="lazy" class="live-image" data-base-src="https://cameras.skibanff.com/dynamic/42l" src="https://cameras.skibanff.com/dynamic/42l" alt="Mid Mountain Height of Snow"></article>
 		</div>
 	</section>
 
 	<section class="group" id="banff-norquay">
 		<div class="group-head">
 			<h2>Banff Norquay</h2>
-			<p>Source: https://banffnorquay.com/winter/conditions-old/webcam/</p>
+			<p>Source: https://banffnorquay.com/winter/conditions/webcam/</p>
 		</div>
 		<div class="cards">
-			<article class="card"><h3 class="card-title">BanffCam</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" alt="Banff Norquay BanffCam"></article>
+			<article class="card"><h3 class="card-title">Cliffhouse</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" src="https://banffnorquay.com/webcam-images/winter/BanffCam/banffcam.jpg" alt="Banff Norquay Cliffhouse"></article>
 			<article class="card"><h3 class="card-title">Cascade Cam</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/CascadeCam/cascade.jpg" src="https://banffnorquay.com/webcam-images/winter/CascadeCam/cascade.jpg" alt="Banff Norquay Cascade Cam"></article>
+			<article class="card"><h3 class="card-title">Sundance</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/SundanceCam/sundance.jpg" src="https://banffnorquay.com/webcam-images/winter/SundanceCam/sundance.jpg" alt="Banff Norquay Sundance"></article>
+			<article class="card"><h3 class="card-title">Tube Park</h3><img loading="lazy" class="live-image" data-base-src="https://banffnorquay.com/webcam-images/winter/TubeParkCam/tubepark.jpg" src="https://banffnorquay.com/webcam-images/winter/TubeParkCam/tubepark.jpg" alt="Banff Norquay Tube Park"></article>
 		</div>
 	</section>
 
