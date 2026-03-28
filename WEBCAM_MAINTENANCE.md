@@ -57,13 +57,21 @@ Use these source pages when checking for additions, removals, and naming updates
 - app.webcam-hd pages may be reachable but not always expose easy freshness text to tooling.
 - Prefer endpoints that render a direct webcam view in iframe instead of full marketing pages.
 
+## Camera Blacklist (Do Not Add)
+If a camera is listed here, do not add or re-add it in any webcam page, even if it appears in provider feeds.
+
+- Sun Peaks - Village Clock Tower
+   - URL: https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg
+   - Rule: blacklisted and excluded from future additions.
+
 ## Recommended Future Update Workflow
 1. Read source pages for each resort and list current webcam entries.
 2. Compare against iframe src entries in mmwebcamsSki.html.
 3. Add missing webcams with a clear card title.
 4. Replace stale or broken endpoints with direct webcam provider endpoints where possible.
-5. Remove duplicates across all sections, keeping only the first occurrence.
-6. Re-run a duplicate check for iframe src values.
+5. Skip any blacklisted cameras from this file, even if newly discovered in source feeds.
+6. Remove duplicates across all sections, keeping only the first occurrence.
+7. Re-run a duplicate check for iframe src values.
 
 ## Useful Validation Commands (PowerShell)
 Duplicate iframe src check:
