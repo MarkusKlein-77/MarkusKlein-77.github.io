@@ -1,64 +1,80 @@
 # Webcam Maintenance Notes
 
-Last updated: 2026-03-27
+Last updated: 2026-03-28
 
 ## Purpose
-This file summarizes the current webcam page setup and recent maintenance conclusions, so future Copilot updates can be done quickly and consistently.
+This file is the maintenance receipt and operating guide for webcam updates.
+Use it as the source of truth before editing any webcam page.
 
-## Repository Overview
-- Repository type: static GitHub Pages site.
-- Primary webcam pages in this repo:
-  - mmwebcamsSki.html
-  - mmwebcamsCanada.html
-  - mmwebcamsWorld.html
-  - webcams.html
-- Other root files used by site deployment:
-  - index.html
-  - CNAME
-  - robots.txt
-  - csi.min.js
+## Scope
+- Primary webcam pages:
+   - mmwebcamsSki.html
+   - mmwebcamsCanada.html
+   - mmwebcamsWorld.html
+- Related index page:
+   - webcams.html
 
-## Current State Of mmwebcamsSki.html
-- Layout is now card based, one webcam per row, near full width.
-- Webcam titles are displayed above each iframe.
-- Source link rows were intentionally removed from cards.
-- Sections present:
-  - Val Thorens
-  - Les Menuires
-  - Meribel
-  - Courchevel
+## 2-Day Receipt (2026-03-27 to 2026-03-28)
 
-## Recent Command Conclusions
-1. Duplicate iframe source check result:
-   - NO_DUPLICATE_IFRAME_SRCS
-   - Meaning: no iframe src URL appears more than once across sections.
+### mmwebcamsCanada.html
+- CSS/media behavior aligned to preserve image aspect ratio:
+   - images keep natural proportions (`height: auto`, `object-fit: contain`).
+- Sunshine Village expanded to full provider set (11 cams) from API data.
+- Banff Norquay expanded from 2 to 4 cams (missing Sundance and Tube Park added).
+- Existing refresh model retained (cache-busting image reload cycle for `live-image`).
 
-2. Cime Caron embed decision:
-   - Skaping candidate URLs for cime caron redirected to about.skaping.com and were not usable as direct camera pages.
-   - Selected replacement endpoint: https://app.webcam-hd.com/valthorens/cime-caron
-   - This endpoint is used so the page shows a webcam style embed similar to other webcam-hd entries.
+### mmwebcamsWorld.html
+- CSS/media behavior aligned to preserve image aspect ratio for image webcams.
+- Source URL lines were added/expanded per section and kept in section headers.
+- Meran 2000 Seilbahn Bergstation removed and blacklisted.
+- Schnalstal updated:
+   - Added missing cams and switched selected Feratel cams to MP4 iframe URLs where requested.
+   - Kept Panomax entries as iframe/image depending on provider format.
+- Ultental updated:
+   - Correct RAS paths found and used (`alm/cam1`, `alm/cam2`, `pro/cam1`, `ult/cam1`).
+   - Bergstation Schwemmalmbahn switched to Feratel MP4 iframe URL when requested.
+- Feldberg updated:
+   - Added source page `feldberg-erlebnis.de/aktuelles/webcam`.
+   - Added additional validated cams (Grafenmatt, Panorama iframe, Seebuck Talstation, Schwarzenbach Liftansicht).
+   - Altglashuetten removed and blacklisted.
+   - Panorama switched to requested event-cam iframe URL and set to full viewport height override.
+- Lago di Iseo updated multiple times:
+   - Skyline entries moved to iframe approach where required.
+   - Temporary meteoblue/windy-derived cams added and later removed on request.
+   - Final state after latest request: first three Iseo cams removed.
+- Lago di Garda cam 1 replaced with Skyline official embed-style snippet (clickable image link).
+- Lago di Caldonazzo changed from image to iframe on request, but source remains HTTP-only.
 
-3. Open source page links:
-   - Removed from webcam cards to keep the page focused on live views.
+### mmwebcamsSki.html
+- No structural updates in this 2-day window.
+- Existing architecture remains valid:
+   - iframe-first layout,
+   - source links removed from cards,
+   - known Cime Caron replacement retained (`app.webcam-hd.com`).
 
-4. Width and readability update:
-   - Cards changed from multi-column grid to single column list.
-   - Iframes increased to a large viewport-based height for easier viewing.
+## Current Webcam Handling Rules
 
-## Webcam Source Mapping Used
-Use these source pages when checking for additions, removals, and naming updates:
-- Val Thorens: https://www.valthorens.com/en/webcams/
-- Les Menuires: https://lesmenuires.com/de/webcams
-- Meribel: https://www.meribel.net/en/practical-information/webcams/
-- Courchevel: https://courchevel.com/de/livecams/webcam/
+### Rendering decision tree
+1. If provider offers stable direct image (`image/jpeg`, `image/webp`), use:
+    - `<img class="live-image" data-base-src="..." src="...">`
+2. If provider blocks image hotlinking or requires player context, use:
+    - `<iframe loading="lazy" src="...">`
+3. If provider gives a stable MP4 live URL and user requests player-style behavior, use iframe with MP4 URL.
+4. Prefer official embed URLs/snippets when available.
 
-## Known Caveats
-- Some webcam providers show cookie or loading shells to automated fetch tools.
-- app.webcam-hd pages may be reachable but not always expose easy freshness text to tooling.
-- Prefer endpoints that render a direct webcam view in iframe instead of full marketing pages.
+### Refresh behavior
+- For `<img class="live-image">`, keep `data-base-src` and JS cache-busting refresh cycle.
+- For iframe providers, rely on provider/player update behavior (no forced image polling).
+
+### Validation rules before merge
+- Validate endpoint status and content type.
+- For Feratel thumbnails, note that HEAD can return 405 while GET works.
+- For RAS paths, validate body/content type (some paths return HTML fallback, not camera media).
+- Avoid mixed-content regressions:
+   - HTTP-only webcam URLs can fail on HTTPS pages.
 
 ## Camera Blacklist (Do Not Add)
-If a camera is listed here, do not add or re-add it in any webcam page, even if it appears in provider feeds.
+If a camera appears here, do not add or re-add it even if it appears in provider feeds.
 
 - Sun Peaks - Village Clock Tower
    - URL: https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg
@@ -72,28 +88,40 @@ If a camera is listed here, do not add or re-add it in any webcam page, even if 
    - URL: http://webcam.land-in-sicht.com/feldberg/webcam-altglashuetten1280.jpg
    - Rule: blacklisted and excluded from future additions.
 
-## Recommended Future Update Workflow
-1. Read source pages for each resort and list current webcam entries.
-2. Compare against iframe src entries in mmwebcamsSki.html.
-3. Add missing webcams with a clear card title.
-4. Replace stale or broken endpoints with direct webcam provider endpoints where possible.
-5. Skip any blacklisted cameras from this file, even if newly discovered in source feeds.
-6. Remove duplicates across all sections, keeping only the first occurrence.
-7. Re-run a duplicate check for iframe src values.
+## Known Caveats
+- Some providers require cookies/JS and expose only partial data to fetch tools.
+- Skyline direct `embed/.../img/...jpg` may fail or be inconsistent without using official embed page/snippet.
+- HTTP-only sources may not render on HTTPS GitHub Pages due to browser mixed-content policy.
+
+## Future Update Playbook
+1. Read this file first.
+2. Read the source URLs listed in each section header of the target HTML page.
+3. Compare provider cam list vs. current cards (title + endpoint).
+4. Exclude any blacklisted camera immediately.
+5. Choose image vs iframe using the rendering rules above.
+6. Validate endpoint behavior (status + media type + freshness).
+7. Keep card titles close to official naming.
+8. Keep edits minimal and section-scoped.
 
 ## Useful Validation Commands (PowerShell)
-Duplicate iframe src check:
 
-Select-String -Path 'mmwebcamsSki.html' -Pattern '<iframe[^>]*src="([^"]+)"' -AllMatches |
+Check duplicate iframe sources in a file:
+
+Select-String -Path 'mmwebcamsWorld.html' -Pattern '<iframe[^>]*src="([^"]+)"' -AllMatches |
 ForEach-Object { $_.Matches } |
 ForEach-Object { $_.Groups[1].Value } |
 Group-Object |
 Where-Object { $_.Count -gt 1 }
 
-If this returns no output, there are no duplicates.
+Check duplicate image base sources in a file:
 
-## Editing Guidelines For This Repo
-- Keep pages static (no build tooling assumed).
-- Preserve simple HTML that works in GitHub Pages.
-- Prefer minimal, targeted edits over broad rewrites.
-- Keep webcam card titles close to official source naming.
+Select-String -Path 'mmwebcamsWorld.html' -Pattern 'data-base-src="([^"]+)"' -AllMatches |
+ForEach-Object { $_.Matches } |
+ForEach-Object { $_.Groups[1].Value } |
+Group-Object |
+Where-Object { $_.Count -gt 1 }
+
+## Editing Guidelines
+- Keep pages static and GitHub Pages-friendly.
+- Preserve existing layout/styling conventions unless a specific visual fix is requested.
+- Prefer small, verifiable changes over broad rewrites.
