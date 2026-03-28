@@ -64,6 +64,10 @@ If a camera is listed here, do not add or re-add it in any webcam page, even if 
    - URL: https://www.sunpeaksresort.com/sites/default/files/spr_website_data/webcams/Village%20Clock%20Tower.jpg
    - Rule: blacklisted and excluded from future additions.
 
+- Meran - Meran 2000 Seilbahn Bergstation
+   - URL: https://webcams.meran2000.com/seilbahn/cam.jpg
+   - Rule: blacklisted and excluded from future additions.
+
 ## Recommended Future Update Workflow
 1. Read source pages for each resort and list current webcam entries.
 2. Compare against iframe src entries in mmwebcamsSki.html.
