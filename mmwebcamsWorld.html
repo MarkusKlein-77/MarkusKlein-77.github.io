@@ -133,8 +133,7 @@
 		border-bottom: 1px solid var(--line);
 	}
 
-	.card iframe,
-	.card img {
+	.card iframe {
 		width: 100%;
 		height: 78vh;
 		min-height: 560px;
@@ -142,7 +141,17 @@
 		border: 0;
 		display: block;
 		background: #e5edf2;
-		object-fit: cover;
+	}
+
+	.card img {
+		width: 100%;
+		height: auto;
+		min-height: 0;
+		max-height: none;
+		border: 0;
+		display: block;
+		background: #e5edf2;
+		object-fit: contain;
 	}
 
 	@media (max-width: 680px) {
@@ -158,10 +167,14 @@
 			padding: 10px;
 		}
 
-		.card iframe,
-		.card img {
+		.card iframe {
 			height: 62vh;
 			min-height: 420px;
+		}
+
+		.card img {
+			height: auto;
+			min-height: 0;
 		}
 	}
 </style>
