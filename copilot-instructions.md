@@ -1,6 +1,6 @@
 # Copilot Instructions for Webcam Maintenance
 
-Last updated: 2026-08-23
+Last updated: 2026-11-01
 
 ## Quick Start
 
@@ -96,6 +96,9 @@ Each webcam entry has a comment above it showing:
    - Final state after latest request: first three Iseo cams removed.
 - Lago di Garda cam 1 replaced with Skyline official embed-style snippet (clickable image link).
 - Lago di Caldonazzo changed from image to iframe on request, but source remains HTTP-only.
+   - 2026-11-01: replaced with bergfex player iframe `https://content.bergfex.at/webcam/?id=21774&showCopyright=0` (HTTPS, embeddable, includes archive). The original `http://www.hotel-lidocaldonazzo.it/lidocaldonazzo.jpg` has no HTTPS endpoint and is blocked as mixed content.
+- 2026-11-01: Lichtenstern (Ritten) cams fixed with `referrerpolicy="no-referrer"` on the `<img>` tags (see Known Caveats).
+- 2026-11-01: Feldberg "Altglashuetten Schwarzenbach Liftansicht" upstream feed was down (returned "Keine Verbindung"); card removed and URL blacklisted.
 
 #### mmwebcamsSki.html
 - No structural updates in this 2-day window.
@@ -140,10 +143,16 @@ If a camera appears here, do not add or re-add it even if it appears in provider
    - URL: http://webcam.land-in-sicht.com/feldberg/webcam-altglashuetten1280.jpg
    - Rule: blacklisted and excluded from future additions.
 
+- Altglashuetten Schwarzenbach Liftansicht
+   - URL: https://webcams.ftp-land-in-sicht.de/feldberg/webcam-schwarzenbachlift-talstation.jpg
+   - Rule: blacklisted and excluded from future additions.
+
 ### Known Caveats
 - Some providers require cookies/JS and expose only partial data to fetch tools.
 - Skyline direct `embed/.../img/...jpg` may fail or be inconsistent without using official embed page/snippet.
 - HTTP-only sources may not render on HTTPS GitHub Pages due to browser mixed-content policy.
+- Some hosts (e.g. lichtenstern.it) return 403 when a request has both a foreign `Referer` and a query string, which breaks the `?t=` cache-busting refresh. Add `referrerpolicy="no-referrer"` to such `<img>` tags. To detect: test with `curl -e "https://onkelholle.de/" "URL?t=1"`; plain curl without a referer will report 200 and hide the issue.
+- A 200 `image/jpeg` response is not proof of a working cam: also check body size and magic bytes (a few bytes means a placeholder or error text).
 
 ### Future Update Playbook
 1. Read this file first.
