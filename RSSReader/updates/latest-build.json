@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 62001,
-  "runId": 44930972750,
-  "commitSha": "c4a6b5c78cc4bf227e62e3cbd106384d2987909f",
-  "builtAt": "2026-11-21T17:39:41Z",
-  "summary": "Fix Android updater digest verification",
+  "buildNumber": 63001,
+  "runId": 44931574980,
+  "commitSha": "ab20877e5aa5ab9a8879872ce1f184968a3a7d03",
+  "builtAt": "2026-11-21T17:46:36Z",
+  "summary": "Use canonical Pages host for Android updates",
   "assets": {
     "android": {
-      "url": "https://markusklein-77.github.io/RSSReader/updates/builds/000000062001-c4a6b5c78cc4/RSSReader-android.apk",
-      "sha256": "c531698bb6ad79d9ceb7601fae78d8ccd72c9a19380af1e0d1c07aa16727bff9"
+      "url": "https://onkelholle.de/RSSReader/updates/builds/000000063001-ab20877e5aa5/RSSReader-android.apk",
+      "sha256": "0cff46368a546697b901e408dc55a4fd8dda86333fdd60434824214995ea2596"
     }
   }
 }
