@@ -1,6 +1,6 @@
 # Copilot Instructions for Webcam Maintenance
 
-Last updated: 2026-11-01
+Last updated: 2026-11-21
 
 ## Quick Start
 
@@ -69,6 +69,12 @@ Each webcam entry has a comment above it showing:
 ### 2-Day Receipt (2026-03-27 to 2026-03-28)
 
 #### mmwebcamsCanada.html
+- 2026-11-21: checked resort sources and refreshed feeds:
+   - Lake Louise added the official Pipestone live stream, Base Area (`cam2.jpg`), and Learning Area & Tube Park (`cam12.jpg`).
+   - Banff Norquay's current source is `https://banffnorquay.com/webcam/`; updated to Cascade Lower, Cascade Top, Tube Park, and Mystic Top. Removed the unavailable Cliffhouse feed and no-longer-listed Sundance feed.
+   - Removed the dead Banff Tours proxy endpoint (404).
+   - Added Revelstoke Top of Stellar Chair using official Ozolio embed `EMB_SWUG000010C4`.
+   - Added Sun Peaks View of Top of the World and West Bowl Express; removed Village Clock Tower per the blacklist.
 - CSS/media behavior aligned to preserve image aspect ratio:
    - images keep natural proportions (`height: auto`, `object-fit: contain`).
 - Sunshine Village expanded to full provider set (11 cams) from API data.
