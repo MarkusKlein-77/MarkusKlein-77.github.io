@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "buildNumber": 62001,
+  "runId": 44930972750,
+  "commitSha": "c4a6b5c78cc4bf227e62e3cbd106384d2987909f",
+  "builtAt": "2026-11-21T17:39:41Z",
+  "summary": "Fix Android updater digest verification",
+  "assets": {
+    "android": {
+      "url": "https://markusklein-77.github.io/RSSReader/updates/builds/000000062001-c4a6b5c78cc4/RSSReader-android.apk",
+      "sha256": "c531698bb6ad79d9ceb7601fae78d8ccd72c9a19380af1e0d1c07aa16727bff9"
+    }
+  }
+}
